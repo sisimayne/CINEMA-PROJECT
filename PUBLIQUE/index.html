@@ -1,25 +1,29 @@
+<!-- filepath: /C:/Users/esthe/OneDrive/Documentos/CINEMA PROJECT/PUBLIQUE/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page d'accueil</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Bienvenue au Cinéma</h1>
+    <h1>Movie Search</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="search.html">Recherche</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="search.html">Découvrir</a></li>
+            <li><a href="movie.html">Top 10</a></li>
+            <li><a href="Contact.html">Support</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <h2>Films tendances</h2>
-    <div id="trending-movies"></div>
-  </main>
-  <script src="index.bundle.js"></script>
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search for movies...">
+        <button type="submit">Search</button>
+    </form>
+    <div id="movie-container"></div>
+    <div id="top-movies-container"></div>
+    <script src="search.bundle.js"></script>
+    <script src="top-movies.bundle.js"></script>
 </body>
 </html>
