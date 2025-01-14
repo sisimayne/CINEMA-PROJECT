@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Détails du film</title>
+  <title>Recherche de films</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Détails du film</h1>
+    <h1>Recherche de films</h1>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -17,8 +17,12 @@
     </nav>
   </header>
   <main>
-    <div id="movie-details"></div>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Rechercher un film...">
+      <button type="submit">Rechercher</button>
+    </form>
+    <div id="search-results"></div>
   </main>
-  <script src="movie.bundle.js"></script>
+  <script src="search.bundle.js"></script>
 </body>
 </html>
